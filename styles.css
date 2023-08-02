@@ -10,7 +10,7 @@ body {
 /* Header contents */
 .header {
     background-color: #1F2937;
-    padding: 10px 100px;
+    padding: 10px 19%;
 }
 
 .navbar {
@@ -33,11 +33,13 @@ a {
 
 .header-logo {
     font-size: 24px;
+    font-weight: 900;
     color: #F9FAF8;
 }
 
 .header-links {
     font-size: 18px;
+    font-weight: 900;
 }
 
 .header-content {
@@ -52,15 +54,15 @@ a {
 .header-content-left, .header-content-right {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    max-width: 50%;
 }
 
 .header-content-right {
     display: flex;
-    background-color: gray;
+    background-color: #75757c;
     padding: 100px 80px;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    text-align: center;
     color: #E5E7EB
 }
 
@@ -85,7 +87,6 @@ a {
     align-items: center;
     background-color: #3882F6;
     border-radius: 7px;
-    box-shadow: none;
     border: none;
     font-weight: bolder;
     color: #F9FAF8;
@@ -95,7 +96,7 @@ a {
 .main-content {
     display: flex;
     flex-direction: column;
-    padding: 30px 100px;
+    padding: 30px 0;
 }
 
 .info-title {
@@ -110,7 +111,7 @@ a {
     display: flex;
     justify-content: center;
     gap: 50px;
-    padding-top: 30px;
+    padding: 30px 19%;
 }
 
 .info-card {
@@ -127,4 +128,92 @@ a {
     justify-content: center;
     align-items: center;
     padding: 149px 0;
+    flex-shrink: 0;
+    flex-grow: 0;
 }
+
+.info-subtext {
+    display: flex;
+    text-align: center;
+}
+
+/* Quote section */
+.quote {
+    display: flex;
+    flex-direction: column;
+    background-color: #E5E7EB;
+    padding: 30px 19%;
+    margin: 0;
+    color: #1F2937;
+}
+
+.quote p {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.quote-from {
+    display: flex;
+    font-size: 24px;
+    justify-content: right;
+    font-weight: 700;
+}
+
+/* Call to action section */
+.call-to-action {
+    background-color: #3882F6;
+    display: flex;
+    max-width: 50%;
+    align-self: center;
+    margin: 100px 0;
+    padding: 50px 100px;
+    color: #F9FAF8;
+    border-radius: 7px;
+}
+
+.call-to-action-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.call-to-action-header {
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.call-to-action-subtext {
+    color: #E5E7EB;
+    font-size: 12px;
+}
+
+.call-to-action-signup {
+    margin-left: 40px;
+    display: flex;
+    flex-shrink: 0;
+    max-width: 100px;
+    padding: 0 18px;
+    justify-content: center;
+    align-items: center;
+    background-color: #3882F6;
+    border-radius: 7px;
+    border: 2px solid white;
+    font-weight: bolder;
+    color: #F9FAF8;
+}
+
+/* Footer section */
+.footer {
+    display: flex;
+    background-color: #1F2937;
+    color: #E5E7EB;
+    justify-content: center;
+    padding: 40px;
+}
+
+
